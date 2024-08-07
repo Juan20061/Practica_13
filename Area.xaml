@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:area="clr-namespace:_3716370Practica13.Clases"
+             x:Class="_3716370Practica13.Area"
+             Title="Area">
+
+    <ContentPage.BindingContext>
+        <area:TrianguloClases/>
+    </ContentPage.BindingContext>
+
+    
+        <VerticalStackLayout>
+            <Entry Placeholder="Primer lado" 
+               Text="{Binding A}" 
+              />
+
+            <Entry Placeholder="Segundo lado" 
+               Text="{Binding B}" 
+               />
+
+            <Entry Placeholder="Tercer Lado" 
+               Text="{Binding C}" 
+               />
+
+            <Button Text="Sumar"
+                WidthRequest="290"
+                CornerRadius="20"
+                BackgroundColor="Red"
+                Command="{Binding trianguloCommand}" />
+
+            <Label Text="Area del Triangulo:" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Large"/>
+
+            <Label Text="{Binding Area}"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+        </VerticalStackLayout>
+
+   
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_3716370Practica13.Principal"
+             Title="Principal">
+
+    <VerticalStackLayout
+    Padding="10"
+    Spacing="15"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+
+        <Button
+        Text="SUMA"
+        Clicked="Button_Clicked"
+        BackgroundColor="Orange"
+        TextColor="White"
+        CornerRadius="20"
+        Margin="0,10"
+        Padding="10"
+        FontAttributes="Bold"
+        WidthRequest="200" />
+
+        <Button
+        Text="Triangulo"
+        Clicked="Button_Clicked_1"
+        BackgroundColor="Red"
+        TextColor="White"
+        CornerRadius="20"
+        Margin="0,10"
+        Padding="10"
+        FontAttributes="Bold"
+        WidthRequest="200" />
+
+        <Button
+        Text="Brocha"
+        Clicked="Button_Clicked_2"
+        BackgroundColor="Orange"
+        TextColor="White"
+        CornerRadius="20"
+        Margin="0,10"
+        Padding="10"
+        FontAttributes="Bold"
+        WidthRequest="200" />
+
+        <Button
+        Text="Sueldo"
+        Clicked="Button_Clicked_3"
+        BackgroundColor="Red"
+        TextColor="White"
+        CornerRadius="20"
+        Margin="0,10"
+        Padding="10"
+        FontAttributes="Bold"
+        WidthRequest="200" />
+
+        <Button
+        Text="Distancia"
+        Clicked="Button_Clicked_4"
+        BackgroundColor="Orange"
+        TextColor="White"
+        CornerRadius="20"
+        Margin="0,10"
+        Padding="10"
+        FontAttributes="Bold"
+        WidthRequest="200" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

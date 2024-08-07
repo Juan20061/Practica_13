@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:V="clr-namespace:_3716370Practica13.Clases"
+             x:Class="_3716370Practica13.MainPage">
+
+    <ContentPage.BindingContext>
+        <V:MainClases/>
+    </ContentPage.BindingContext>
+    
+        <VerticalStackLayout>
+        <Entry Placeholder="Ingrese el primer número" 
+               Text="{Binding Mun1}" 
+              />
+
+        <Entry Placeholder="Ingrese el segundo número" 
+               Text="{Binding Mun2}" 
+               />
+
+        <Button Text="Sumar"
+                WidthRequest="290"
+                CornerRadius="20"
+                BackgroundColor="Red"
+                Command="{Binding SumarCommand}" />
+
+        <Label Text="Resultado:" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Large"/>
+
+        <Label Text="{Binding Rel}"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+            
+    </VerticalStackLayout>
+
+</ContentPage>

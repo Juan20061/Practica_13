@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dv="clr-namespace:_3716370Practica13.Clases"
+             x:Class="_3716370Practica13.Distancia"
+             Title="Distancia">
+
+    <ContentPage.BindingContext>
+        <dv:DistanciaClases/>
+    </ContentPage.BindingContext>
+
+
+    <VerticalStackLayout>
+
+        <Entry Placeholder="Digite el PX1" 
+               Text="{Binding X1}" 
+              />
+
+        <Entry Placeholder="Digite el PX1" 
+       Text="{Binding X2}" 
+      />
+
+        <Entry Placeholder="Digite el PX1" 
+       Text="{Binding Y1}" 
+      />
+        <Entry Placeholder="Digite el PX1" 
+       Text="{Binding Y2}" 
+      />
+
+        <Button Text="Calcular distancia"
+                WidthRequest="290"
+                CornerRadius="20"
+                BackgroundColor="Red"
+                Command="{Binding DistanciaCommand}" />
+
+        <Label Text="La distancia es" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Large"/>
+
+        <Label Text="{Binding Rel}"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

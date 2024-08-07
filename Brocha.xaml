@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_3716370Practica13.Brocha"
+             xmlns:b="clr-namespace:_3716370Practica13.Clases"
+             Title="Brocha">
+    <ContentPage.BindingContext>
+        <b:BrochaClases/>
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout>
+        <VerticalStackLayout>
+            
+            <Entry Placeholder="¿Costo por M2 ?" 
+            Text="{Binding Precio}" 
+           />
+
+            <Entry Placeholder="¿Metros cuadrados a pintar?" 
+            Text="{Binding Areapintar}" 
+            />
+
+            <Entry Placeholder="Cantidad de clientes" 
+ Text="{Binding Cliente}" 
+ /> 
+
+
+            <Button Text="Calcular"
+             WidthRequest="290"
+             CornerRadius="20"
+             BackgroundColor="Red"
+             Command="{Binding TotalCommand}" />
+
+            <Label Text="Total a pagar por pintar" 
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"/>
+
+            <Label Text="{Binding Costo}"
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+
+
+            <Label Text="Presupuesto para cada clientes es" 
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"/>
+
+            <Label Text="{Binding Clientep}"
+ HorizontalOptions="Center"
+ FontSize="Large"/>
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
